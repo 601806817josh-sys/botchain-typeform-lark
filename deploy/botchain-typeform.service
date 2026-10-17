@@ -1,0 +1,16 @@
+[Unit]
+Description=BOT Chain Typeform to Lark webhook
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/botchain-typeform
+EnvironmentFile=/opt/botchain-typeform/.env
+ExecStart=/opt/botchain-typeform/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8080
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

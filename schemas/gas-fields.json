@@ -1,0 +1,23 @@
+[
+  {"type":"text","name":"项目名称 / Project Name"},
+  {"type":"auto_number","name":"业务编号","style":{"rules":[{"type":"text","text":"GAS-"},{"type":"created_time","date_format":"yyyyMMdd"},{"type":"incremental_number","length":4}]}},
+  {"type":"link","name":"关联总申请","link_table":"总申请表"},
+  {"type":"text","name":"Typeform 提交 ID"},
+  {"type":"datetime","name":"Typeform 提交时间","style":{"format":"yyyy-MM-dd HH:mm Z"}},
+  {"type":"text","name":"官网 / Official Website","style":{"type":"url"}},
+  {"type":"text","name":"项目方联系人 / Project Team Contact"},
+  {"type":"text","name":"对接 BD / BD Contact"},
+  {"type":"text","name":"消耗 Gas 的合约地址"},
+  {"type":"select","name":"Gas 是否达到 5 万 USDT 门槛","multiple":false,"options":[{"name":"是 / Yes"},{"name":"否 / No"}]},
+  {"type":"text","name":"返佣钱包 / Rebate Wallet Address"},
+  {"type":"select","name":"负责人路由","multiple":true,"default_value":["Evan"],"options":[{"name":"Evan"}]},
+  {"type":"user","name":"审核负责人","multiple":true},
+  {"type":"group_chat","name":"通知群","multiple":true},
+  {"type":"select","name":"审核状态","multiple":false,"default_value":["未审核"],"options":[{"name":"未审核"},{"name":"审核中"},{"name":"已通过"},{"name":"推进会议"},{"name":"审核驳回"}]},
+  {"type":"datetime","name":"审核状态更新时间","style":{"format":"yyyy-MM-dd HH:mm"}},
+  {"type":"select","name":"通知状态","multiple":false,"default_value":["待通知"],"options":[{"name":"待通知"},{"name":"已通知"},{"name":"通知失败"}]},
+  {"type":"text","name":"飞书通知消息 ID"},
+  {"type":"text","name":"内部备注 / Internal Notes"},
+  {"type":"created_at","name":"记录创建时间","style":{"format":"yyyy-MM-dd HH:mm"}},
+  {"type":"updated_at","name":"记录更新时间","style":{"format":"yyyy-MM-dd HH:mm"}}
+]
